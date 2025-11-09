@@ -5,7 +5,7 @@ let despriction = document.createElement("h2")
 let temp = document.createElement("h2")
 let humidity = document.createElement("h2")
 async function findTemparature(){
-       div.innerHTML="";
+    div.innerHTML="";
        try{
          const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=190e47f8a93cf7e80ba7ef4daa1d07e7&units=metric`)
          const response = await api.json()
@@ -22,5 +22,4 @@ async function findTemparature(){
         div.innerText=error.message;
         console.log(error)
        }
-
      }
