@@ -23,3 +23,4 @@ async function findTemparature(){
         console.log(error)
        }
      }
+
